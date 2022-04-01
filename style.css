@@ -1,0 +1,339 @@
+/* CSS reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: url(wedding-landing-background.png); 
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Own code starts here*/
+ * {
+     box-sizing: border-box;
+ }
+
+ /* Desktop header styles*/
+ header {
+     width: 100vw;
+     height: 100vh;
+     background: url(wedding-landing-cover.jpg) no-repeat center center fixed;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+ }
+ .headline {
+     background-color: hsla(100,0%,0%,.6);
+     width: 50%;
+     height: 40%;
+     text-align: center;
+ }
+ .gettingmarried, .date {
+    color: hsla(0,0%,100%,.9);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Libre Baskerville', serif;
+ }
+ .date::before, .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
+ .gettingmarried {
+     padding-top: 2rem;
+ }
+ .gettingmarried::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+  }
+
+ .name {
+     color: #d2ba87;
+     font-size: 7rem;
+     font-family: 'Great Vibes', cursive;
+     padding-top: 2.5rem;
+ }
+
+  /* Location block styles*/
+
+.locations {
+    padding: 3rem 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.locationheadline, .giftsheadline, .contactheadline {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #444349;
+    padding-bottom: 3rem;
+}
+.ceremony, .photos, .party {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+
+.ceremonyheadline, .photosheadline, .partyheadline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #444349;
+    padding-bottom: 2rem;
+}
+.locationpics {
+    width: 25%;
+    padding-bottom: 2rem;
+}
+.ceremony {
+    width: 33.33%;
+}
+.church, .bastion, .lounge {
+    font-size: 1.1rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    color: #444349;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+  /* Program block styles*/
+
+.program {
+    background: hsla(100,0%,0%,.6);
+    text-align: left;
+    padding: 3rem 3rem;
+    padding-left: 35%;
+    padding-right: 35%;
+    color: #d2ba87;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.programheadline {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.programpara {
+    padding-bottom: 2rem;
+    font-style: italic;
+}
+ul {
+    line-height: 1.5rem;
+}
+
+  /* Gifts block styles*/
+
+.gifts {
+    text-align: center;
+    height: 50vh;
+    padding: 3rem 3rem;
+    color: #444349;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.giftspic {
+    width: 8.25%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+  /* Q&A block styles*/
+.qa {
+    background: hsla(100,0%,0%,.6);
+    padding: 3rem 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: #d2ba87;
+}
+.qaheadline {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.travel, .food, .smallstuff {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+    vertical-align: text-top;
+}
+.quaheadlines {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.question, .answer {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.15rem;
+    padding-bottom: 1rem;
+    line-height: 1.8rem;
+}
+.question {
+    font-weight: 700;
+}
+.answer {
+    font-weight: 300;
+}
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+
+  /* Contact block styles*/
+.contact {
+    text-align: center;
+    padding: 3rem 3rem;
+    color: #444349;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.15rem;
+    line-height: 3rem;
+}
+
+footer {
+    background-color:#606060;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    font-size: .9rem;
+
+}
+
+  /* Media Queries come here*/
+
+@media (max-width: 900px) {
+    .headline {
+        background-color: hsla(100,0%,0%,.6);
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    }
+    .ceremony, .photos, .party {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .headline {
+        background-color: hsla(100,0%,0%,.6);
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    }
+    .gettingmarried, .date {
+        color: hsla(0,0%,100%,.9);
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-family: 'Libre Baskerville', serif;
+        padding-top: 2rem;
+     }
+     .name {
+         color: #d2ba87;
+         font-size: 5rem;
+         font-family: 'Great Vibes', cursive;
+         padding-top: 2.5rem;
+     }
+    span {
+        letter-spacing: -5px;
+    }
+    .ceremony, .photos, .party {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .giftspic {
+        width: 25%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .travel, .food, .smallstuff {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: left;
+    }
+    .program {
+        background: hsla(100,0%,0%,.6);
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .church::after, .bastion::after, .lounge::after {
+        content: "";
+        display: block;
+        height: .1875rem;
+        width: 25vw;
+        margin: 1.5rem auto;
+        background-color: #444349;
+    }
+    .travel::after, .food::after, .smallstuff::after {
+        content: "";
+        display: block;
+        height: .1875rem;
+        width: 25vw;
+        margin: 1.5rem auto;
+        background-color: #444349;
+    }
+}
